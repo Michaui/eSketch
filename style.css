@@ -1,15 +1,52 @@
 * {
     margin: 0; 
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(242, 242, 242);
-}
+    background-color: rgb(249, 249, 249);
+    height: 100vh; 
+    display: grid; 
+    justify-content: center;
+    align-content: center;
 
-.board{
-    width: 500px;
-    height: 500px;
-    display: grid;
-}
+    & .title, .mode {
+        margin-left: 5%; 
+    }
+
+    & .content{
+        display: flex; 
+
+        & .board {
+            width: 500px;
+            height: 500px;
+            display: grid;
+    
+            margin: 5% 0; 
+            border: 16px solid rgb(237, 237, 237); 
+            border-radius: 16px;
+        }
+        
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            margin: 5%; 
+            
+            & input{
+                margin-bottom: 14%;
+            }
+
+            & button {
+                padding: 18px; 
+                flex-shrink: 1;
+                margin: 5% 0; 
+                
+            }
+        }
+        
+    } 
+    
+
+}    
+
